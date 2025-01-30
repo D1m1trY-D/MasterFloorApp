@@ -1,0 +1,46 @@
+﻿<Page x:Class="MasterFloorApp.UI.Pgs.PgAddPartner"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:MasterFloorApp.UI.Pgs"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="PgAddPartner">
+
+    <Grid>
+        <StackPanel Orientation="Vertical" Margin="50,50,50,0">
+            <TextBlock Text="Наименование партнера"/>
+            <TextBox x:Name="TbxNamePartner"/>
+
+            <TextBlock Text="Тип партнера"/>
+            <ComboBox x:Name="ComboPartnerType">
+                <TextBlock Text="ООО" Tag="1"/>
+                <TextBlock Text="ОАО" Tag="2"/>
+                <TextBlock Text="ПАО" Tag="3"/>
+                <TextBlock Text="ЗАО" Tag="4"/>
+            </ComboBox>
+
+            <TextBlock Text="Рейтинг"/>
+            <TextBox x:Name="TbxRating"/>
+
+            <TextBlock Text="Адрес"/>
+            <TextBox x:Name="TbxAddress"/>
+            
+            <TextBlock Text="Имя директора"/>
+            <TextBox x:Name="TbxDirectorName"/>
+            <TextBlock Text="Фамилия директора"/>
+            <TextBox x:Name="TbxDirectorFirstName"/>
+            <TextBlock Text="Отчество директора"/>
+            <TextBox x:Name="TbxDirectorPartonymic"/>
+
+            <TextBlock Text="Телефон"/>
+            <TextBox x:Name="TbxPhone"/>
+
+            <TextBlock Text="Почта"/>
+            <TextBox x:Name="TbxEmail"/>
+
+            <Button x:Name="AddPartner" Grid.Row="1" Content="Сохранить" HorizontalAlignment="Left" Margin="10" Click="AddPartner_Click"/>
+        </StackPanel>
+    </Grid>
+</Page>
